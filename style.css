@@ -740,24 +740,24 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 100%;
+    margin-top: 70px;
 }
 
-.portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
-}
+
 
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
 .black-background {
-    background-color: rgba(5, 5, 5, 0.7);
+    background-color: rgba(5, 5, 5, 0.6);
     padding: 40px 40px 40px 40px;
 }
 
 .bold-link {
     display: block;
+    margin-top: 30px;
     font-weight: 900;
     text-decoration: underline!important;
 }
@@ -779,13 +779,13 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: rgb(0, 0, 0);
-    color: #c27956!important;
+    color: rgb(0, 0, 0);
+    background: #c27956!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: black!important;
+    color: #c27956!important;
+    background: black!important;
 }
 
 .ltc-white {
@@ -822,7 +822,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -974,13 +974,13 @@ h4 {
         margin-left: 10px;
     }
     .bloc {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
-        padding: 40px 0;
+        padding: 40px 10px;
     }
     .bloc-sm,
     .bloc-md {
@@ -1026,12 +1026,18 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .black-background {
+        padding: 40px 0px;
+    }
+    .hero-bloc-text {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 400px) {
     .bloc {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -1041,7 +1047,7 @@ h4 {
     }
 }
 
-.bloc-p-def, .citation, .activities {
+.bloc-p-def, .citation, .activities, .contact {
     font-size: 22px;
 }
 
