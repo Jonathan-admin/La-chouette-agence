@@ -516,7 +516,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 40px!important;
 }
 
 .icon-lg {
@@ -841,6 +841,10 @@ h4 {
     background: #c27956!important;
 }
 
+.btn-atomic-tangerine  {
+    color: black!important;
+}
+
 .btn-orange:hover {
     background: #b6400a!important;
     border: 1px solid black;
@@ -1139,23 +1143,21 @@ h4 {
 }
 
 .link {
-    margin-top: 30px;
-    padding: 20px;
     font-size: 17px;
-    color: #333333!important;
+    margin-top: 30px;
 }
 
-.list li{
-    font-size: 1.2em;
+.link a{
     margin: 10px;
-}
-
-.link a:hover {
     color: black!important;
 }
 
-.link div {
-    margin-top: 10px;
+.link a:hover {
+    font-weight: bold;
+}
+
+.icon-md:hover {
+    text-shadow:2px 2px 2px black;
 }
 
 @media (max-width: 767px) {
@@ -1168,5 +1170,8 @@ h4 {
 @media (max-width: 500px) {
     .link  div{
         width: 75%;
+    }
+    .icon-md {
+        font-size: 30px;
     }
 }
