@@ -18,6 +18,10 @@ a:hover {
     cursor: pointer;
 }
 
+input:hover , textarea:hover {
+    border: 1px solid #c27956!important;
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -133,7 +137,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .d-bloc .a-btn:hover,
@@ -150,7 +154,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -471,6 +475,10 @@ button {
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
 }
 
+.btn-clean:hover {
+    border: 1px solid #c27956!important;
+}
+
 .icon-md {
     font-size: 30px!important;
 }
@@ -691,7 +699,6 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -715,6 +722,19 @@ h3 {
     color: #333333!important;
 }
 
+.title {
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.title-fw {
+    border-bottom: 2px solid #333333!important;
+}
+
+.title-fb {
+    border-bottom: 2px solid #F3976C !important;
+}
+
 .med-width-whitespace {
     max-width: 800px;
     margin: auto auto auto auto;
@@ -734,14 +754,17 @@ h4 {
     margin-top: 24px;
 }
 
+.black {
+    color: #333333!important;
+}
+
 .white {
-    color: #FFFFFF!important;
+    color: #ffffff!important;
 }
 
 .portfolio-thumb {
     margin-bottom: 24px;
     width: 100%;
-    margin-top: 70px;
 }
 
 
@@ -778,14 +801,22 @@ h4 {
     color: #F3976C!important;
 }
 
-.btn-atomic-tangerine {
-    color: rgb(0, 0, 0);
+.btn-atomic-tangerine, .btn-orange  {
     background: #c27956!important;
 }
 
+.btn-orange:hover {
+    background: #b6400a!important;
+    border: 1px solid black;
+}
+
 .btn-atomic-tangerine:hover {
+    background: rgb(48,48,48)!important;
     color: #c27956!important;
-    background: black!important;
+}
+
+.btn-atomic-tangerine:hover > .cta-hero {
+    color: #F3976C!important;
 }
 
 .ltc-white {
@@ -1047,8 +1078,12 @@ h4 {
     }
 }
 
-.bloc-p-def, .citation, .activities, .contact {
+.bloc-p-def, .citation, .activities, .title-ft, .contact {
     font-size: 22px;
+}
+
+.title-ft {
+    margin: 30px;
 }
 
 .activities {
@@ -1065,4 +1100,37 @@ h4 {
 
 .citation + p {
     font-size: 1.09em;
+}
+
+.link {
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 17px;
+    color: #333333!important;
+}
+
+.list li{
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.link a:hover {
+    color: black!important;
+}
+
+.link div {
+    margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+    .link  div{
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .link  div{
+        width: 75%;
+    }
 }
