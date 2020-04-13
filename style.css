@@ -54,6 +54,8 @@ a:hover {
     cursor: pointer;
 }
 
+
+
 input:hover , textarea:hover, input:focus , textarea:focus {
     border: 1px solid #c27956!important;
 }
@@ -369,8 +371,9 @@ input:hover , textarea:hover, input:focus , textarea:focus {
 }
 
 .nav > li a:hover,
-.nav > li a:focus {
+.nav > li a:focus, .navbar-brand:focus, a[data-gallery-id="gallery-1"]:focus {
     background: transparent;
+    border-bottom: 1px solid black;
 }
 
 .navbar-toggle {
@@ -872,7 +875,7 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.ltc-white:hover {
+.ltc-white:hover, .ltc-white:focus  {
     color: #cccccc!important;
 }
 
@@ -1169,7 +1172,7 @@ h4 {
     text-shadow: 1px 1px 1px black;
 }
 
-.icon-md:hover {
+.icon-md:hover, .social:focus {
     text-shadow:2px 2px 2px black;
 }
 
