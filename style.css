@@ -54,7 +54,7 @@ a:hover {
     cursor: pointer;
 }
 
-input:hover , textarea:hover {
+input:hover , textarea:hover, input:focus , textarea:focus {
     border: 1px solid #c27956!important;
 }
 
@@ -803,7 +803,9 @@ h4 {
     width: 100%;
 }
 
-
+.portfolio-row {
+    margin-bottom: 60px;   
+}
 
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
@@ -837,22 +839,29 @@ h4 {
     color: #F3976C!important;
 }
 
-.btn-atomic-tangerine, .btn-orange  {
-    background: #c27956!important;
-}
-
 .btn-atomic-tangerine  {
+    background: #c27956!important;
     color: black!important;
 }
 
-.btn-orange:hover {
-    background: #b6400a!important;
+.btn-orange {
+    
+    background: #c27856d0!important;
+    font-size: 1.2em;
+}
+
+.btn-orange:hover, .btn-orange:focus  {
+    background: #b6400a7a!important;
     border: 1px solid black;
 }
 
 .btn-atomic-tangerine:hover {
     background: rgb(48,48,48)!important;
     color: #c27956!important;
+}
+
+.btn-atomic-tangerine:focus {
+    border: 3px solid #ffffff!important;
 }
 
 .btn-atomic-tangerine:hover > .cta-hero {
@@ -1132,7 +1141,6 @@ h4 {
 
 
 .citation {
-    border-left: none;
     font-style: italic;
     padding: 0 30px;
     margin-bottom: 3px;
@@ -1143,8 +1151,13 @@ h4 {
 }
 
 .link {
-    font-size: 17px;
+    font-size: 15px;
     margin-top: 30px;
+}
+
+.list li{
+    font-size: 1.2em;
+    margin: 5px;
 }
 
 .link a{
@@ -1153,7 +1166,7 @@ h4 {
 }
 
 .link a:hover {
-    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
 }
 
 .icon-md:hover {
@@ -1165,7 +1178,7 @@ h4 {
         width: 50%;
         margin: auto;
     }
-}
+} 
 
 @media (max-width: 500px) {
     .link  div{
@@ -1174,4 +1187,8 @@ h4 {
     .icon-md {
         font-size: 30px;
     }
+    .list {
+        margin-top: 30px;
+    }
 }
+
