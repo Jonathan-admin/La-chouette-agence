@@ -10,7 +10,6 @@
 .et-icon-presentation,
 .et-icon-edit {
     font-family: et-line;
-    speak: none;
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -371,7 +370,9 @@ input:hover , textarea:hover, input:focus , textarea:focus {
 }
 
 .nav > li a:hover,
-.nav > li a:focus, .navbar-brand:focus, a[data-gallery-id="gallery-1"]:focus {
+.nav > li a:focus, 
+.navbar-brand:focus, 
+a[data-gallery-id="gallery-1"]:focus {
     background: transparent;
     border-bottom: 1px solid black;
 }
@@ -853,12 +854,14 @@ h4 {
     font-size: 1.2em;
 }
 
-.btn-orange:hover, .btn-orange:focus  {
+.btn-orange:hover, 
+.btn-orange:focus  {
     background: #b6400a7a!important;
     border: 2px solid black;
 }
 
-.btn-atomic-tangerine:hover, .btn-atomic-tangerine:focus {
+.btn-atomic-tangerine:hover, 
+.btn-atomic-tangerine:focus {
     background: rgb(48,48,48)!important;
     color: #c27956!important;
 }
@@ -875,7 +878,8 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.ltc-white:hover, .ltc-white:focus  {
+.ltc-white:hover, 
+.ltc-white:focus  {
     color: #cccccc!important;
 }
 
@@ -931,13 +935,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -955,10 +959,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -967,8 +968,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1130,7 +1129,11 @@ h4 {
     }
 }
 
-.bloc-p-def, .citation, .activities, .title-ft, .contact {
+.bloc-p-def, 
+.citation, 
+.activities, 
+.title-ft, 
+.contact {
     font-size: 22px;
 }
 
@@ -1176,7 +1179,8 @@ h4 {
     text-shadow: 1px 1px 1px black;
 }
 
-.icon-md:hover, .social:focus {
+.icon-md:hover, 
+.social:focus {
     text-shadow:2px 2px 2px black;
 }
 
