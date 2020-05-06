@@ -747,7 +747,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto auto 50px auto;
 }
 
 h2 {
@@ -1184,22 +1184,11 @@ h4 {
     text-shadow:2px 2px 2px black;
 }
 
-@media (max-width: 767px) {
-    .link  div{
-        width: 50%;
-        margin: auto;
-    }
-} 
+
 
 @media (max-width: 500px) {
-    .link  div{
-        width: 75%;
-    }
     .icon-md {
         font-size: 30px;
-    }
-    .list {
-        margin-top: 30px;
     }
 }
 
